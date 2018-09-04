@@ -5,6 +5,9 @@ Use it as Docker container or deploy into Kubernetes as initContainer
 
 ## Usage
 ```
+# Pull the image
+docker pull emblica/git-cloner
+# Run it
 docker run -it --rm -e REPOSITORY_URL=git@github.com:emblica/git-cloner.git -e SSH_PRIVATE_KEY="$(cat ~/.ssh/deploy-key)" -v $(pwd)/git:/mnt/git emblica/git-cloner
 ```
 
