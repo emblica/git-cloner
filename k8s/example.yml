@@ -3,6 +3,7 @@ kind: Pod
 metadata:
   name: linecount-pod
 spec:
+  restartPolicy: Never
   volumes:
   - name: git-repo
     emptyDir: {}
